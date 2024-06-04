@@ -29,7 +29,7 @@ output_file="/etc/split-tunnel-ovpn/data/ip_addresses.txt"
 
 # Find subdomains for each domain
 for domain in "${domains[@]}"; do
-  subdomains=$(split-tunnel-subfinder -d "$domain" -silent &>/dev/null)
+  subdomains=$(bash -c "split-tunnel-subfinder -d '$domain' -silent" 2>/dev/null)
   subdomains="$domain $subdomains"
 
   # Resolve IP addresses for each subdomain
