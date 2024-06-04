@@ -1,7 +1,7 @@
 # Maintainer: Forrest Dunlap <forrestmdunlap@gmail.com>
 
 pkgname=split-tunnel-ovpn
-pkgver=1.0.2
+pkgver=1.0.3
 pkgrel=1
 pkgdesc="A package for configuring split tunneling with OpenVPN"
 arch=('any')
