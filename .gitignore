@@ -3,3 +3,6 @@
 userpass.txt
 *.tar.gz
 tmp/
+pkg/
+src/
+*.tar.zst
