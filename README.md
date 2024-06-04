@@ -16,7 +16,13 @@ The `split-tunnel-ovpn` package is designed to configure and manage a split-tunn
 
 ```
 # For Arch-based systems
-sudo pacman -U split-tunnel-ovpn-1.0.0-1-any.pkg.tar.zst
+mkdir ~/PKG
+cd ~/PKG
+git clone https://github.com/fmdunlap/split-tunnel-ovpn.git
+cd split-tunnel-ovpn
+makepkg -si
+
+sudo split-tunnel-ovpn-configure
 
 # For other systems
 # TODO
