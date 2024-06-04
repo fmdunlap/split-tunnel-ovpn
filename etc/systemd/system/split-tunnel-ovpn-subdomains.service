@@ -5,7 +5,7 @@ Wants=network-online.target split-tunnel-ovpn-subdomains.timer
 
 [Service]
 Type=oneshot
-ExecStart=/usr/local/bin/split-tunnel-ovpn-generate.sh
+ExecStart=/usr/local/bin/split-tunnel-ovpn-generate
 
 [Install]
 WantedBy=multi-user.target
