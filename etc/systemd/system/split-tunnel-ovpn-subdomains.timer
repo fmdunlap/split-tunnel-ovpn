@@ -1,0 +1,11 @@
+[Unit]
+Description=Update split tunnel IPs every 8hrs
+
+[Timer]
+OnCalendar=*-*-* 03:00:00
+OnCalendar=*-*-* 11:00:00
+OnCalendar=*-*-* 19:00:00
+Persistent=true
+
+[Install]
+WantedBy=timers.target

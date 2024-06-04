@@ -1,0 +1,11 @@
+[Unit]
+Description=Generate subdomains and IP addresses
+After=network-online.target firewalld.service
+Wants=network-online.target split-tunnel-ovpn-subdomains.timer
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/split-tunnel-ovpn-generate.sh
+
+[Install]
+WantedBy=multi-user.target
