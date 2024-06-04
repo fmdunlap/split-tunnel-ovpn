@@ -1,5 +1,6 @@
 /etc/split-tunnel-ovpn/creds/*.cert
 /etc/split-tunnel-ovpn/creds/*.key
+/etc/split-tunnel-ovpn/data/*
 userpass.txt
 *.tar.gz
 tmp/
