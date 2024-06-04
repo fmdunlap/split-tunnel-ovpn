@@ -22,8 +22,6 @@ git clone https://github.com/fmdunlap/split-tunnel-ovpn.git
 cd split-tunnel-ovpn
 makepkg -si
 
-sudo split-tunnel-ovpn-configure
-
 # For other systems
 # TODO
 ```
